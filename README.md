@@ -349,3 +349,236 @@ Por ejemplo, si tienes el texto "Jotaro Kujo". Tienes que conseguir "ojuK oratoJ
 Crea una variable con un texto. Después, dale la vuelta a las palabras del texto.
 
 Por ejemplo, si tienes el texto "Os habeis cargado a mi Jojo Favorito, Joseph Joestar!". Debes conseguir "Joestar! Joseph, Favorito Jojo mi a cargado habeis Os"
+
+## Ejercicio 53
+
+Define una intefaz llamada `perro`, que tenga las propiedades `nombre`, `raza` y `edad`.
+
+Crea dos objetos diferentes a partir de la interfaz `Perro`.
+
+## Ejercicio 54
+
+Crea una intefaz llamada `personaje` que tenga las propiedades `nombre`, `stand` y `grito`. También le tienes que poner una función llamada `gritar()` que recibirá un número llamado `repeticiones`.
+
+Cuando se llame a la función `gritar()`, se tendrá que repetir la frase del grito el número indicado de veces.
+
+Por ejemplo, si tienes el personaje `Jotaro`, le pones el grito `ora` y llamas a `gritar(5)`, tendrás el siguiente output: `ora ora ora ora ora`.
+
+## Ejercicio 55
+
+Crea una intefaz llamada `personaje` con la propiedad obligatoria `nombre` y la propiedad opcional `stand`.
+
+Crea dos objetos, uno que tenga la propiedad `stand` informada y otro que la tenga sin informar.
+
+## Ejercicio 56
+
+Crea una interfaz llamada `dirección` con las propiedades `calle`, `ciudad` y `país`. 
+
+Crea una interfaz llamada `persona` que tenga las propiedades `nombre`, `edad` y la `dirección`, que obviamente, será del tipo de la interfaz creada anteriormente.
+
+Finalmente, crea un objeto `persona` con `dirección` incluida.
+
+## Ejercicio 57
+
+Escribe una interfaz llamada `personaje` que tenga las propiedades `nombre`, `stand` y `habilidades`.
+
+Crea una función llamada `información` que reciba un objeto de tipo personaje. Esta función mostrará el mensaje: `personaje` tiene el stand `stand` que tiene las siguientes habilidades: `habilidades`.
+
+## Ejercicio 58
+
+Crea una interfaz llamada `persona` que tenga las propiedades `nombre` y `edad`.
+
+Después crea una interfaz `empleado` con las propiedades `puesto` y `salario`, además que extienda a la interfaz `persona`.
+
+Después crea un objeto utilizando la interfaz `empleado`.
+
+## Ejercicio 59
+
+Utilizando el método `find` busca el personaje llamado "Jotaro" y muestra la propiedad stand.
+
+```typescript
+const personajes = [
+	{
+		"nombre" : "Jotaro",
+        "stand" : "Star Platinum",
+	},
+	{
+		"nombre" : "Joseph",
+        "stand" : "Hermit Purple",
+	},
+	{
+		"nombre" : "Avdool",
+        "stand" : "Magician Red",
+	},
+	{
+		"nombre" : "Polnareff",
+        "stand" : "Silver Chariot",
+	},
+	{
+		"nombre" : "Kakyoin",
+        "stand" : "Hierophant Green",
+	},
+];
+```
+
+## Ejercicio 60
+
+Utilizando el método `filter` busca los personajes de estados unidos.
+
+```typescript
+const jojos = [
+	{
+		"nombre" : "Jonathan Joestar",
+        "país" : "Inglaterra",
+	},
+	{
+		"nombre" : "Joseph Joestar",
+        "país" : "EEUU",
+	},
+	{
+		"nombre" : "Jotaro Kujo",
+        "país" : "Japón",
+	},
+	{
+		"nombre" : "Josuke Higashikata",
+        "país" : "Japón",
+	},
+	{
+		"nombre" : "Giorno giovanna",
+        "país" : "Italia",
+	},
+	{
+		"nombre" : "Jolyne Cujoh",
+        "país" : "EEUU",
+	},
+	{
+		"nombre" : "Jhonny Joestar",
+        "país" : "EEUU",
+	},
+];
+```
+
+## Ejercicio 61
+
+Utilizando el método `reduce` saca la media de este array de números: `[1, 2, 3, 4, 5]`.
+
+## Ejercicio 62
+
+Combinando los métodos `map` y `filter`, saca el nombre de todos los personajes del equipo jojo.
+
+
+```typescript
+const jojos = [
+	{
+		"nombre" : "Joseph Joestar",
+        "stand": "Hermit Purple",
+        "equipo" : "jojo",
+	},
+	{
+		"nombre" : "Jotaro Kujo",
+        "stand": "Star Platinum",
+        "equipo" : "jojo",
+	},
+	{
+		"nombre" : "Dio",
+        "stand": "The World",
+        "equipo" : "dio",
+	},
+	{
+		"nombre" : "Vanilla Ice",
+        "stand": "Cream",
+        "equipo" : "dio",
+	},
+	{
+		"nombre" : "Noriaki Kakyoin",
+        "stand": "Hierophant Green",
+        "equipo" : "jojo",
+	},
+];
+```
+
+## Ejercicio 63
+
+Utilizando el método `reduce` saca la media de altura de los personajes de Jojos.
+
+```typescript
+const jojos = [
+	{
+		"nombre" : "Joseph Joestar",
+        "altura": 200
+	},
+	{
+		"nombre" : "Jotaro Kujo",
+        "altura": 195
+	},
+	{
+		"nombre" : "Dio",
+        "altura": 195
+	},
+	{
+		"nombre" : "Vanilla Ice",
+        "altura": 190
+	},
+	{
+		"nombre": "Noriaki Kakyoin",
+        "altura": 178
+	},
+];
+```
+
+## Ejercicio 64
+
+Haz un formulario dividido en dos partes. A cada lado tendremos un input de tipo texto con un selector de moneda. 
+
+El input del lado derecho estará bloqueado. No se puede escribir nada.
+
+Cada vez que cambie el número del input izquierdo, se actualizará el input del lado derecho en base a la conversión de la moneda.
+
+Por ejemplo, si en el lado derecho tienes puesto `euros` y pones 100. Y en el lado izquierdo tienes puesto `dolares`, se pondrá automaticamente 107.
+
+La tabla de conversiones será esta:
+
+| Moneda               | Código | 1 EUR = | 1 USD = | 1 GBP = | 1 NOK = | 1 JPY = |
+|----------------------|--------|--------|--------|--------|--------|--------|
+| Euro                 | EUR    | 1.00   | 1.07   | 0.85   | 11.50  | 157.00 |
+| Dólar estadounidense | USD    | 0.93   | 1.00   | 0.79   | 10.75  | 147.00 |
+| Libra esterlina      | GBP    | 1.17   | 1.26   | 1.00   | 13.60  | 185.00 |
+| Corona noruega       | NOK    | 0.087  | 0.093  | 0.073  | 1.00   | 13.60  |
+| Yen japonés          | JPY    | 0.0064 | 0.0068 | 0.0054 | 0.073  | 1.00   |
+
+## Ejercicio 65
+
+Haz un formulario en el que a la izquierda aparezca un input de tipo número para grados centígrados. A la derecha tendrás un input de tipo número para grados Fahrenheit. 
+
+También tendrás un botón de "convertir", cuando lo pulses, actualizarás el valor del input derecho.
+
+Además, tendrás un botón de invertir, que cambiará la conversión para que introduzcas grados Farenheit y te lo convierta a centígrados.
+
+Para pasar de centigrados a Farenheit multiplica por 9/5 y suma 32.
+Para pasar de Farenheit a centígrados multiplica resta 32 y divide entre 5/9.
+
+## Ejercicio 66
+
+Haz un formulario para solicitar el envío de una caja. Tendrás los siguientes campos:
+
+- **Nombre**: de tipo texto
+- **Materíal**: selector con 3 valores: madera, plástico y metal.
+- **Tamaño**: un radio button con 3 opciones: diminuta, mediana y grande 
+- **Comentarios**: textarea.
+- **Envíar**: botón.
+
+Al final del todo habrá otro campo text area que el usuario no puede modficiar. Cada vez que cliques en enviar, se actualizará el valor de este campo con una frase así: `nombre` Ha pedido una caja de `material` con un tamaño `tamaño`. `Comentarios`.
+
+## Ejercicio 67
+
+Haz un formulario con un input de texto, un botón llamado `evaluar` y otro input de tipo texto, bloqueado para el usuario.
+
+El script tiene que calcular un número aleatorio entre 1 y 10. El usuario tiene que poner un número y pulsar en 'evaluar'. Si el número que pone, es el número aleatorio, habrá ganado y saldrá un mensaje diciendo que ha ganado.
+
+Si se equivoca, tendrá que salir un mensaje que ponga: has fallado, te quedan `X` intentos. Teniendo en cuenta que tendrá 3 intentos.
+
+## Ejercicio 68
+
+Haz una calculadora en HTML. Tienes que tener un input donde aparezcan los números. Un botón de cada número, los botones para las 4 operaciones básicas (suma, resta, multiplicación y división), el botón de coma para los decimales y un botón de borrar, para reiniciar la operación.
+
+
