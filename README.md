@@ -582,3 +582,35 @@ Si se equivoca, tendrá que salir un mensaje que ponga: has fallado, te quedan `
 Haz una calculadora en HTML. Tienes que tener un input donde aparezcan los números. Un botón de cada número, los botones para las 4 operaciones básicas (suma, resta, multiplicación y división), el botón de coma para los decimales y un botón de borrar, para reiniciar la operación.
 
 
+## Ejercicio 69
+
+Haz un formulario en el que te pida 8 números. En base a lo introducido en ese formulario, te calculará la letra del DNI y lo pondrá en otro campo del formulario.
+
+El algoritmo para calcular la letra del DNI seguirá estos pasos:
+
+1. El texto introducido tiene que tener 8 dígitos y ser un número. Si no se cumplen estas condiciones, se pondrá un valor vacío.
+2. Si las dos condiciones se cumplen, se calculará el resto de división entre el número introducido y 23. 
+3. Según el resultado (de 0 a 22) le corresponderá una de las letras siguientes: T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E. Tendrás que coger la letra que este en la posición indicada por el número.
+
+## Ejercicio 70
+
+Haz un div. Cuando el ratón este encima de este div, tendrá que aparecer dentro el mensaje "el ratón esta aquí dentro". Cuando el ratón salga, que aparezca el mensaje "el ratón se fue".
+
+## Ejercicio 71
+
+Crea un campo de tipo input y un botón de "añadir" al lado. Cuando se pulse al botón de añadir, se creará un nuevo parrafo con el contenido que había en el input. Si el input esta vacío, no se añade nada.
+
+Cuando se clique en un párrafo, este se borrará.
+
+## Ejercicio 72
+
+Pon esta imagen de un mapa en un HTML:
+
+![](img/bluemap.jpg)
+
+Pon 5 imagenes de esta moneda, en sitios aleatorios del mapa:
+
+![](img/goldcoin.png)
+
+## Ejercicio 73
+
