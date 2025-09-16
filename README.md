@@ -614,3 +614,102 @@ Pon 5 imagenes de esta moneda, en sitios aleatorios del mapa:
 
 ## Ejercicio 73
 
+Pon un selector con diferentes nombres de colores. Cada vez que selecciones un color, el body deberia cambiar a ese color.
+
+## Ejercicio 74
+
+Pon un botón que cuando lo cliques salte un pop up. Tiene que verse un cuadrado en el centro de la pantalla, con el resto de la pantalla totalmente oscura. El popup tendrá un botón de "cerrar", que cuando lo cliques, desaparezca el popup.
+
+## Ejericicio 75
+
+Pon esta imagen en un HTML:
+
+![](img/limoncios_peleados.jpg)
+
+Cuando cliques en la imagen, tiene que cambiar el SRC a esta imagen:
+
+![](img/limoncio_comiendo.png)
+
+Cada vez que cliques, la imagen volverá a alternar, de forma infinita.
+
+## Ejercicio 76
+
+En un HTML, escribe un párrafo. En algúnas palabras aleatorias, ponles un span con una clase inventada.
+
+Con Javascript, selecciona todos los elementos que tengan esa clase, con un bucle, pon de color rojo cada una de estas palabras.
+
+## Ejercicio 77
+
+En un HTML, escribe 3 inputs que compartan una clase. Pon también un botón.
+
+Cuando pulses el botón, se recorrerán todos los inputs utilizando un bucle y se sumará el valor de todos los elementos y se pondrá el resultado en un párrafo.
+
+## Ejercicio 78
+
+Pon un input de tipo número, un selector con los operadores `+, -, *, / y %`, otro input de tipo número y un último input de tipo número deshabilitado.
+
+Cuando pongas números en ambos inputs, se calculará la operación en base al operador seleccionado y se actualizará el input final con el resultado.
+
+## Ejercicio 79
+
+En un HTML pon 5 textos: azul, rojo, verde, naranja y todos.
+
+Después, pon 50 divs de 150x150px, 10 de cada color, salteados.
+
+Cuando cliques en una de las 4 palabras, se filtrarán solo los cuadrados de ese color. El resto se esconderán.
+
+Si clicas en todos, no se esconderá ningún cuadrado.
+
+## Ejercicio 80
+
+Vas a hacer un tres en raya. 
+
+Para eso, crea un HTML en el que se vea en la parte de arriba esta imagen:
+
+![](img/interrogante.png)
+
+Y en la parte de abajo, pones estas tres imagenes, una al lado de la otra:
+
+![](img/piedra.png)
+![](img/papel.png)
+![](img/tijera.png)
+
+En Javascript, tienes que elegir aleatoriamente una de las tres opciones, esta será la decisión de la máquina.
+
+Después, se esperará a que el usuario elija una de las tres opciones clicando en la imagen.
+
+Una vez el usuario ha elegido, se revelará la opción de la máquina, cambiando la imagen del interrogante por la imagen de lo que haya elegido la máquina.
+
+Finalmente, en pantalla se escribirá el resultado:
+
+- **Has ganado!**: Si ha ganado el usuario
+- **Has perdido!**: Si el usuario ha perdido
+- **Empate!**: Si habeis empatado
+
+## Ejercicio 81
+
+Ahora vas a hacer el tres en raya para dos jugadores.
+
+Para eso, crea un HTML en el que se vea en las partes izquierda y derecha una columna vertical con estas tres imagenes (una columna en cada lado):
+
+![](img/piedra.png)
+![](img/papel.png)
+![](img/tijera.png)
+
+En la parte superior del centro, pondrás los textos "esperando al jugador 1 y jugador 2".
+
+En la parte inferior del centro, saldrán dos imagenes de este interrogante, una a cada lado.
+
+![](img/interrogante.png)
+
+Se esperará a que cada usuario elija su jugada haciendo clic en la imagen.
+
+El jugador 1 tendrá que elegir una de las tres opciones de la izquierda y el jugador una de las de la derecha.
+
+Cuando un jugador elija una opción, el interrogante de su lado cambiará y se pondrá esta imagen:
+
+![](img/check.png)
+
+También se cambiará el texto para quitar al jugador al que ya no se espera. Es decir, si juega el jugador 1, el texto pasará a "esperando a jugador 2" y viceversa.
+
+Cuando ambos usuarios hayan elegido, se mostrará un texto indicando quien ha ganado.
