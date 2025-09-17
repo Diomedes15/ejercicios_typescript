@@ -91,7 +91,7 @@ Escribe una función que recibe dos parametros (`nombre` y `edad`), calculará s
 
 ## Ejercicio 13
 
-Escribe una función que recibe dos parametors booleanos. Si ambos valores son `true`, debería devolver `true`. Si ambos son `false`, debería devolver `false`. En cualquier otro caso, devolverá `true`.
+Escribe una función que recibe dos parametors booleanos. Si ambos valores son `true`, debería devolver `false`. En cualquier otro caso, devolverá `true`.
 
 Por ejemplo, la llamada `nand(true, true)` devolverá `false`. Y las siguientes llamadas devolverán `true`:
 
@@ -103,9 +103,9 @@ nand(false, false);
 
 ## Ejercicio 14
 
-Escribe una función que recibe dos parametors booleanos. Si ambos valores son `false`, debería devolver `true`. En cualquier otro caso, devolverá `true`.
+Escribe una función que recibe dos parametors booleanos. Si ambos valores son `false`, debería devolver `true`. En cualquier otro caso, devolverá `false`.
 
-Por ejemplo, la llamada `nor(false, false)` devolverá `true`. Y las siguientes llamadas devolverán `true`:
+Por ejemplo, la llamada `nor(false, false)` devolverá `true`. Y las siguientes llamadas devolverán `false`:
 
 ```
 nor(true, false);
