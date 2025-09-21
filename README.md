@@ -662,7 +662,13 @@ Si clicas en todos, no se esconderá ningún cuadrado.
 
 ## Ejercicio 80
 
-Vas a hacer un tres en raya. 
+Haz un script llamado `calculadora.js`. En ese script vas a poner 4 funciones flecha, una para sumar, otra para restar, otra para multiplicar y otra para dividir.
+
+Estas funciones las vas a exportar. Y las importarás para utilizarlas en el script `main.js`
+
+## Ejercicio 81
+
+Vas a hacer un piedra, papel, tijeras. 
 
 Para eso, crea un HTML en el que se vea en la parte de arriba esta imagen:
 
@@ -686,9 +692,9 @@ Finalmente, en pantalla se escribirá el resultado:
 - **Has perdido!**: Si el usuario ha perdido
 - **Empate!**: Si habeis empatado
 
-## Ejercicio 81
+## Ejercicio 82
 
-Ahora vas a hacer el tres en raya para dos jugadores.
+Ahora vas a hacer el piedra, papel, tijeras para dos jugadores.
 
 Para eso, crea un HTML en el que se vea en las partes izquierda y derecha una columna vertical con estas tres imagenes (una columna en cada lado):
 
@@ -713,3 +719,150 @@ Cuando un jugador elija una opción, el interrogante de su lado cambiará y se p
 También se cambiará el texto para quitar al jugador al que ya no se espera. Es decir, si juega el jugador 1, el texto pasará a "esperando a jugador 2" y viceversa.
 
 Cuando ambos usuarios hayan elegido, se mostrará un texto indicando quien ha ganado.
+
+## Ejercicio 83
+
+Haz una llamada a la api `https://thronesapi.com/api/v2/Characters`. De aquí, saca el nombre completo, el titulo, la casa y la imagen de cada personaje. Después, ponlo en un HTML.
+
+## Ejercicio 84
+
+Vas a hacer un ahorcado con pokemons.
+
+Dibuja en pantalla la siguiente imagen:
+
+![](img/ahorcado.jpg)
+
+Solo se tiene que ver el palo.
+
+Genera un número aleatorio entre 1 y el máximo de pokemos que existen. Haz una llamada a la siguiente api con ese número:
+
+`https://pokeapi.co/api/v2/pokemon/{numero_generado}`.
+
+Recoge el nombre y la foto 'Official Artwork' de la respuesta. Entonces, en el HTML crea una cantidad de guiones igual a las letras del pokemon. Ten en cuenta que hay pokemos que tienen espacios en el nombre o signos de puntuación (como Mr. Mime).
+
+Dibuja las letras del alfabeto. Deja que el usuario pueda clicar esas letras. Cada vez que el usuario clique una letra, si ha acertado, se sustituirá el guión por la letra acertada. Si has fallado, se moverá la imagen a la siguiente. Si esta el palo, saldrá la cabeza, si esta la cabeza, saldrá la cabeza con cuerpo, etc.
+
+Hayas acertado o fallado, se tachará la letra que has seleccionado y no podrás clicar otra vez.
+
+Si llegas al muñeco completamente colgado, avisas al jugador que ha perdido.
+
+## Ejercicio 85
+
+Haz un tres en raya para dos jugadores. Para eso, tienes que hacer un tablero de 9x9. Las casillas estarán vacías.
+
+El primer jugador, tendrá la cruz, ese jugador podrá clicar en cualquier casilla vacía y poner ahí una cruz. Entonces será el turno del segundo jugador, que podrá poner un circulo en una casilla vacía. Asi sucesivamente hasta que haya tres simbolos iguales en línea. Si eso ocurre, saldrá un mensaje diciendo quien ha ganado.
+
+Además, tendrás un botón de reiniciar, que cuando lo pulses, el tablero volverá a ponerse vacío y el juego volverá a empezar.
+
+## Ejercicio 86
+
+Haz otro juego del tres en raya. Pero esta vez, jugarás contra la máquina. Para eso, al empezar el juego se calculará aleatoriamente quien empieza, si el jugador o la máquina. El que empiece tendrá las cruces. Cuando sea el turno de la máquina, esta pondrá su jugada en una casilla vacía. Y si es el turno del jugador, la máquina esperará a que haya jugado para hacer su movimiento.
+
+Siempre, antes de que juegue la máquina o el jugador, se comprobará si alguien ha ganado, en cuyo caso se parará el juego y se mostrará el mensaje diciendo quien es el ganador.
+
+## Ejercicio 87
+
+Haz un juego de memoria. 
+
+Vas a tener estos simbolos:
+
+- Circulo rojo
+- Cruz azul claro
+- Triangulo verde claro
+- Cuadrado naranja
+- Rombo negro
+- Estrella amarilla
+- Corazón rosa
+- Media luna azul oscuro
+- Pentagono verde oscuro
+- Triangulo invertido lila
+
+En el HTML van a aparecer 20 cuadrados. A cada uno se le dará el valor de una de los 10 simbolos, de forma que tendrémos 10 pares de simbolos repartidos.
+
+El jugador, tendrá que clicar en los simbolos, al hacerlo, el cuadrado girará y dejará ver la forma. Entonces el usuario podrá elegir otro cuadrado. Si las formas coinciden, se quedarán al descubierto. Si no coinciden, se volverán a girar. 
+
+Además, abajo habrá un botón de reiniciar, que volverá a girar todos los cuadrados y cambiará los simbolos aleatoriamente.
+
+## Ejercicio 88
+
+Haz un arkanoid. 
+
+En un HTMl tendrás que poner una fila de rectangulos de 5x12. Cada rectangulo tendrá un reborde negro y color de relleno aleatorio entre estos:
+
+- Naranja
+- Azul
+- Verde
+- Amarillo
+- Rojo
+
+Abajo del todo habrá una pala (un rectangulo) con una pelota (un circulo) encima. Si pulsas las flechas del teclado o las letras a y d, la pala se moverá a un lado u otro.
+
+Cuando pulses espacio, el juego empezará. Entonces la pelota saldrá despedido hacia arriba. La pelota rebotará en las paredes y en los rectangulos.
+
+Si la pelota toca un rectangulo, este desaparecerá. Si la pelota pasa por debajo de la pala, el jugador habrá perdido y el juego se reinciará.
+
+## Ejercicio 89
+
+Haz un reto de mecanografía.
+
+Vas a escribir una lista de palabras en un array de typescript (si quieres, pideselá a ChatGPT).
+
+Cuando habrás la página, aleatoriamente seleccionarás 50 palabras de ese array y los pondrás en el HTML en un párrafo.
+
+Al principio del párrafo, tendrás un cursor de texto (esa raya que aparece en los textos, que cuando escribes letras van apareciendo detras).
+
+Dejarás que el usuario vaya escribiendo letras, siguiendo el texto que tienes puesto. Por cada letra que el usuario pulse, moverás el cursor. Si ha acertado, la letra aparecerá verde, si ha fallado, la letra aparecerá roja.
+
+Cuando el usuario haya tecleado todas las palabras, aparecerán dos mensajes. Uno que pondrá "Exactitud del {contador}%". Si ha acertado todas las letras, será precisión del 100%, si ha acertado la mitad, será del 50%, etc.
+
+También aparecerá el mensaje "tiempo necesitado". Donde mostrará el tiempo que ha tardado el usuario en teclear todas las palabras.
+
+## Ejercicio 90
+
+Vas a hacer un tier maker de Jojos (algo [así](https://tiermaker.com/create/jojo-character-tier-list-part-1---8-162)).
+
+Crea 7 columnas (S, A, B, C, D, E, F). Debajo del todo, pon las imagenes de los personajes de Jojos (pon unas cuantas, no necesito todas).
+
+Cuando arrastres las imagenes de los jojos, se colocarán en la fila que lo hayas arrastrado.
+
+## Ejercicio 91
+
+Vas a hacer un tetris.
+
+En el HTML tendrás un rectangulo que representará el tablero del tetris. 
+
+Este tablero lo divididiremos en una rejilla de 10x20.
+
+Aleatoriamente, aparecerá una ficha en la parte superior, que podrá ser una de las 7 fichas del tetris (la L, la L invertida, la Z, la Z invertida, la T, el cuadrado y el palo). Además, tendra aleatoriamente uno de los 7 colores del tetris (azul claro, azul oscuro, naranja, amarillo, rojo, lila y verde).
+
+La pieza irá bajando cuadrado a cuadrado. Hasta que toque algo (el suelo u otra pieza). En ese momento parará y empezará a bajar otra pieza.
+
+Cuando haya una fila completa, se borrará y todas las piezas bajarán.
+
+En algún sitio del HTML estará la puntuación, cada vez que completes una fila, la puntuación aumentará.
+
+## Ejercicio 92
+
+Vas a hacer un paint muy básico.
+
+Haz un HTML donde tengas dos botones, uno de lápiz y uno de goma de borrar.
+
+También tendrás varios botones de colores (inventatelos).
+
+Y por último un elemento de tipo `<canvas>`. 
+
+Cuando cliques en uno de los colores, se quedará como seleccionado ese color. 
+
+Si clicas en el botón del lápiz, podrás dibujar dentro del canva, allá por donde arrastres el ratón, dejarás una línea del color seleccionado.
+
+Si seleccionas el borrador, allá por donde lo pases se quitará lo que haya dibujado.
+
+## Ejercicio 93
+
+Haz un juego del Simon Says. Vas a tener 4 botones (verde, rojo, azul y amarillo). Se va a iluminar un botón (cambia el color a uno más claro para simularlo).
+
+Entonces el programa esperará a que el usuario clique en uno de los botones, si clica en el botón que se ha iluminado, el juego continua. Si falla, parará.
+
+Si el usuario ha acertado, se seleccionará un nuevo botón de forma aleatoria y se añadirá a la lista de botones. Entonces se iluminarán los botones uno a uno. Y se volverá a permitir que el usuario pulse los botones.
+
+De nuevo, si falla al pulsar la secuencia, el juego parará, y si acierta en todas, el juego continua.
